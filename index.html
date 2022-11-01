@@ -3,88 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BootStrap</title>
-    <!-- CSSを読み込む -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Roysha</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+
 </head>
 
 <body>
-    <header>
-        <h1 class="display-1 p-3 bg-dark text-center text-white mb-5">BootStrapの練習</h1>
+    <header class="header">
+        <div class="header__inner"></div>
+        <h1 class="header__logo">
+            <img class="header__image" src="images/img_logo.png" alt="Roysha">
+        </h1>
     </header>
 
-    <main class="mb-5">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
-                </ol>
-            </nav>
+    <main class="main">
+        <section class="features">
+            <div class="features__inner">
+                <div class="features__info unit">
+                    <p class="unit__catch">OUR FEATURES</p>
+                    <h2 class="unit__title">Simple and Easy Solution
+                        for Transfer Money Safe
+                        and Faster Way</h2>
+                    <p class="unit__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.
+                        Quis ipsum suspendisse ultrices gravida.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
 
-            <div class="row mb-5">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="http://placekitten.com/800/400" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">記事のタイトル</h5>
-                            <p class="card-text">記事の本文です。</p>
-                            <a href="#" class="btn btn-info">READ MORE</a>
-                        </div>
-                        <div class="card-footer text-end">
-                            2022.10.11
-                        </div>
+                <div class="features__list">
+                    <div class="features__item card">
+                        <img class="card__icon" src="./images/ico_card01.png" alt="">
+                        <dl class="card__body">
+                            <dt class="card__title">24/7 Services</dt>
+                            <dd class="card__text">Lorem ipsum dolor sitame coctetur adipiscing elised do eiusmte</dd>
+                        </dl>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="http://placekitten.com/800/400" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">記事のタイトル</h5>
-                            <p class="card-text">記事の本文です。</p>
-                            <a href="#" class="btn btn-info">READ MORE</a>
-                        </div>
-                        <div class="card-footer text-end">
-                            2022.10.11
-                        </div>
+                    <div class="features__item card">
+                        <img class="card__icon" src="./images/ico_card02.png" alt="">
+                        <dl class="card__body">
+                            <dt class="card__title">Instant Cashout</dt>
+                            <dd class="card__text">Lorem ipsum dolor sitame coctetur adipiscing elised do eiusmte</dd>
+                        </dl>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="http://placekitten.com/800/400" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">記事のタイトル</h5>
-                            <p class="card-text">記事の本文です。</p>
-                            <a href="#" class="btn btn-info">READ MORE</a>
-                        </div>
-                        <div class="card-footer text-end">
-                            2022.10.11
-                        </div>
+                    <div class="features__item card">
+                        <img class="card__icon" src="./images/ico_card03.png" alt="">
+                        <dl class="card__body">
+                            <dt class="card__title">Fully Encrypted</dt>
+                            <dd class="card__text">Lorem ipsum dolor sitame coctetur adipiscing elised do eiusmte</dd>
+                        </dl>
+                    </div>
+                    <div class="features__item card">
+                        <img class="card__icon" src="./images/ico_card04.png" alt="">
+                        <dl class="card__body">
+                            <dt class="card__title">Safe and Secure</dt>
+                            <dd class="card__text">Lorem ipsum dolor sitame coctetur adipiscing elised do eiusmte</dd>
+                        </dl>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="border-bottom pb-4">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    </ul>
-                </nav>
+        <section class="payment">
+            <div class="payment__inner">
+                <div class="payment__info unit">
+                    <p class="unit__catch">ONLINE PAYMENT</p>
+                    <h2 class="unit__title">Make Your Online Payment Almost Every Site</h2>
+                    <div class="unit__body">
+                        <p class="unit__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="unit__text">ccumsanamet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <a class="btn" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="payment__visual">
+                    <img src="images/pic_payment.png" alt="">
+                </div>
             </div>
-
-        </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="text-center mb-5">
-        <small>&copy; trident.</small>
+    <footer class="footer">
+        <div class="footer__inner">
+            <small class="footer__copy">Copyright © Asifuxd - 2019</small>
+        </div>
     </footer>
-
-    <!-- JSを読み込む -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
